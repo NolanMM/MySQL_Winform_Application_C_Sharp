@@ -32,6 +32,7 @@
             this.Side_Menu_Panel = new System.Windows.Forms.Panel();
             this.SideMenuPanel = new System.Windows.Forms.Panel();
             this.Input_panel = new System.Windows.Forms.Panel();
+            this.Sidepanel_input = new System.Windows.Forms.Panel();
             this.Add_Supply_Table_btn = new System.Windows.Forms.Button();
             this.Add_Employee_Table_btn = new System.Windows.Forms.Button();
             this.Add_Parts_Table_btn = new System.Windows.Forms.Button();
@@ -42,10 +43,9 @@
             this.Add_Item_Order_List_table_btn = new System.Windows.Forms.Button();
             this.Add_orders_table_btn = new System.Windows.Forms.Button();
             this.Add_branch_table_btn = new System.Windows.Forms.Button();
-            this.Sidepanel_input = new System.Windows.Forms.Panel();
-            this.Input_tables_btn = new System.Windows.Forms.Button();
             this.Show_The_List_Table_Panel = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.sidepanel_Show = new System.Windows.Forms.Panel();
             this.Supply_List_Table = new System.Windows.Forms.Button();
             this.Emplyee_List_table_btn = new System.Windows.Forms.Button();
             this.Parts_List_btn = new System.Windows.Forms.Button();
@@ -56,15 +56,20 @@
             this.Item_orderlist_table_btn = new System.Windows.Forms.Button();
             this.Order_table_btn = new System.Windows.Forms.Button();
             this.Branch_table_btn = new System.Windows.Forms.Button();
-            this.sidepanel_Show = new System.Windows.Forms.Panel();
-            this.Logo_of_application = new System.Windows.Forms.Panel();
             this.Show_List_table_btn = new System.Windows.Forms.Button();
+            this.Input_tables_btn = new System.Windows.Forms.Button();
+            this.Logo_of_application = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelcenter = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.Side_Menu_Panel.SuspendLayout();
             this.SideMenuPanel.SuspendLayout();
             this.Input_panel.SuspendLayout();
             this.Show_The_List_Table_Panel.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.Logo_of_application.SuspendLayout();
+            this.panelcenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // Side_Menu_Panel
@@ -110,6 +115,15 @@
             this.Input_panel.Name = "Input_panel";
             this.Input_panel.Size = new System.Drawing.Size(204, 396);
             this.Input_panel.TabIndex = 5;
+            // 
+            // Sidepanel_input
+            // 
+            this.Sidepanel_input.BackColor = System.Drawing.Color.White;
+            this.Sidepanel_input.ForeColor = System.Drawing.Color.White;
+            this.Sidepanel_input.Location = new System.Drawing.Point(1, 0);
+            this.Sidepanel_input.Name = "Sidepanel_input";
+            this.Sidepanel_input.Size = new System.Drawing.Size(10, 40);
+            this.Sidepanel_input.TabIndex = 0;
             // 
             // Add_Supply_Table_btn
             // 
@@ -261,32 +275,6 @@
             this.Add_branch_table_btn.UseVisualStyleBackColor = false;
             this.Add_branch_table_btn.Click += new System.EventHandler(this.Add_branch_table_btn_Click);
             // 
-            // Sidepanel_input
-            // 
-            this.Sidepanel_input.BackColor = System.Drawing.Color.White;
-            this.Sidepanel_input.ForeColor = System.Drawing.Color.White;
-            this.Sidepanel_input.Location = new System.Drawing.Point(1, 0);
-            this.Sidepanel_input.Name = "Sidepanel_input";
-            this.Sidepanel_input.Size = new System.Drawing.Size(10, 40);
-            this.Sidepanel_input.TabIndex = 0;
-            // 
-            // Input_tables_btn
-            // 
-            this.Input_tables_btn.BackColor = System.Drawing.Color.Black;
-            this.Input_tables_btn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Input_tables_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Input_tables_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.Input_tables_btn.ForeColor = System.Drawing.Color.White;
-            this.Input_tables_btn.Image = ((System.Drawing.Image)(resources.GetObject("Input_tables_btn.Image")));
-            this.Input_tables_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Input_tables_btn.Location = new System.Drawing.Point(0, 121);
-            this.Input_tables_btn.Name = "Input_tables_btn";
-            this.Input_tables_btn.Size = new System.Drawing.Size(204, 40);
-            this.Input_tables_btn.TabIndex = 0;
-            this.Input_tables_btn.Text = "Input To Tables";
-            this.Input_tables_btn.UseVisualStyleBackColor = false;
-            this.Input_tables_btn.Click += new System.EventHandler(this.Input_tables_btn_Click);
-            // 
             // Show_The_List_Table_Panel
             // 
             this.Show_The_List_Table_Panel.Controls.Add(this.panel2);
@@ -314,6 +302,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(204, 404);
             this.panel2.TabIndex = 5;
+            // 
+            // sidepanel_Show
+            // 
+            this.sidepanel_Show.BackColor = System.Drawing.Color.White;
+            this.sidepanel_Show.ForeColor = System.Drawing.Color.White;
+            this.sidepanel_Show.Location = new System.Drawing.Point(1, 0);
+            this.sidepanel_Show.Name = "sidepanel_Show";
+            this.sidepanel_Show.Size = new System.Drawing.Size(10, 40);
+            this.sidepanel_Show.TabIndex = 0;
             // 
             // Supply_List_Table
             // 
@@ -465,23 +462,6 @@
             this.Branch_table_btn.UseVisualStyleBackColor = false;
             this.Branch_table_btn.Click += new System.EventHandler(this.Branch_table_btn_Click);
             // 
-            // sidepanel_Show
-            // 
-            this.sidepanel_Show.BackColor = System.Drawing.Color.White;
-            this.sidepanel_Show.ForeColor = System.Drawing.Color.White;
-            this.sidepanel_Show.Location = new System.Drawing.Point(1, 0);
-            this.sidepanel_Show.Name = "sidepanel_Show";
-            this.sidepanel_Show.Size = new System.Drawing.Size(10, 40);
-            this.sidepanel_Show.TabIndex = 0;
-            // 
-            // Logo_of_application
-            // 
-            this.Logo_of_application.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Logo_of_application.Location = new System.Drawing.Point(0, 0);
-            this.Logo_of_application.Name = "Logo_of_application";
-            this.Logo_of_application.Size = new System.Drawing.Size(204, 121);
-            this.Logo_of_application.TabIndex = 0;
-            // 
             // Show_List_table_btn
             // 
             this.Show_List_table_btn.BackColor = System.Drawing.Color.Black;
@@ -499,14 +479,82 @@
             this.Show_List_table_btn.UseVisualStyleBackColor = false;
             this.Show_List_table_btn.Click += new System.EventHandler(this.Show_List_table_btn_Click);
             // 
+            // Input_tables_btn
+            // 
+            this.Input_tables_btn.BackColor = System.Drawing.Color.Black;
+            this.Input_tables_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Input_tables_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Input_tables_btn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.Input_tables_btn.ForeColor = System.Drawing.Color.White;
+            this.Input_tables_btn.Image = ((System.Drawing.Image)(resources.GetObject("Input_tables_btn.Image")));
+            this.Input_tables_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Input_tables_btn.Location = new System.Drawing.Point(0, 121);
+            this.Input_tables_btn.Name = "Input_tables_btn";
+            this.Input_tables_btn.Size = new System.Drawing.Size(204, 40);
+            this.Input_tables_btn.TabIndex = 0;
+            this.Input_tables_btn.Text = "Input To Tables";
+            this.Input_tables_btn.UseVisualStyleBackColor = false;
+            this.Input_tables_btn.Click += new System.EventHandler(this.Input_tables_btn_Click);
+            // 
+            // Logo_of_application
+            // 
+            this.Logo_of_application.Controls.Add(this.button1);
+            this.Logo_of_application.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Logo_of_application.Location = new System.Drawing.Point(0, 0);
+            this.Logo_of_application.Name = "Logo_of_application";
+            this.Logo_of_application.Size = new System.Drawing.Size(204, 121);
+            this.Logo_of_application.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 17F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(214, 121);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Arnolda_8723388";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // panelcenter
             // 
             this.panelcenter.BackColor = System.Drawing.Color.Transparent;
+            this.panelcenter.Controls.Add(this.label2);
+            this.panelcenter.Controls.Add(this.label1);
             this.panelcenter.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelcenter.Location = new System.Drawing.Point(221, 0);
             this.panelcenter.Name = "panelcenter";
             this.panelcenter.Size = new System.Drawing.Size(894, 618);
             this.panelcenter.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Location = new System.Drawing.Point(178, 293);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(531, 79);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Arnolda_8723388";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(120, 214);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(690, 79);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Welcome To Database ";
             // 
             // Form1
             // 
@@ -527,6 +575,8 @@
             this.Input_panel.ResumeLayout(false);
             this.Show_The_List_Table_Panel.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.Logo_of_application.ResumeLayout(false);
+            this.panelcenter.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -564,6 +614,9 @@
         private System.Windows.Forms.Panel Sidepanel_input;
         private System.Windows.Forms.Button Input_tables_btn;
         private System.Windows.Forms.Panel panelcenter;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

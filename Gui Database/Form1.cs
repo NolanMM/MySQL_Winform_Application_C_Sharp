@@ -160,7 +160,7 @@ namespace Gui_Database
 
         private void Add_Item_Order_List_table_btn_Click(object sender, EventArgs e)
         {
-            Add_Item_Order_List_Item_UC UCList_Item_Add = new Add_Orders_Items_UC();
+            Add_Item_Order_List_Item_UC UCList_Item_Add = new Add_Item_Order_List_Item_UC();
             addUC(UCList_Item_Add);
             moveSidepanel_input(Add_Item_Order_List_table_btn);
         }
@@ -212,6 +212,12 @@ namespace Gui_Database
             Add_Supply_Item_UC UCSupply_Add = new Add_Supply_Item_UC();
             addUC(UCSupply_Add);
             moveSidepanel_input(Add_Supply_Table_btn);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Home_UC Home = new Home_UC();
+            addUC(Home);
         }
     }
 }
