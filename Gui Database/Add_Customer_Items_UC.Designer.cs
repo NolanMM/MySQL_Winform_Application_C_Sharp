@@ -62,6 +62,7 @@
             this.City_box = new System.Windows.Forms.TextBox();
             this.Telephone_box = new System.Windows.Forms.TextBox();
             this.Add_btn = new System.Windows.Forms.Button();
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -410,12 +411,26 @@
             this.Add_btn.UseVisualStyleBackColor = false;
             this.Add_btn.Click += new System.EventHandler(this.Add_btn_Click);
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(825, 10);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 72;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // Add_Customer_Items_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
@@ -482,5 +497,6 @@
         private System.Windows.Forms.TextBox City_box;
         private System.Windows.Forms.TextBox Telephone_box;
         public System.Windows.Forms.Button Add_btn;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

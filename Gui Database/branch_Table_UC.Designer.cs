@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Supply_ID_Box = new System.Windows.Forms.TextBox();
             this.Branch_ID_box = new System.Windows.Forms.TextBox();
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Account_table_listview
@@ -174,12 +175,26 @@
             this.Branch_ID_box.Size = new System.Drawing.Size(211, 25);
             this.Branch_ID_box.TabIndex = 18;
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(818, 15);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 23;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // branch_Table_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Search_in_table_btn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -209,5 +224,6 @@
         public System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Supply_ID_Box;
         private System.Windows.Forms.TextBox Branch_ID_box;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

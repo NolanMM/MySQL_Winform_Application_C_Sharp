@@ -87,7 +87,7 @@ namespace Gui_Database
         {
             try
             {
-                DateTime date2 = new DateTime(2022, 11, 01, 00, 00, 00);
+                //DateTime date2 = new DateTime(2022, 11, 01, 00, 00, 00);
                 string payment_date = Payment_Date.Text.ToString();
                 string account_number = Account_number_box.Text.ToString();
                 string payment_amount = Payment_amount_box.Text.ToString();
@@ -176,13 +176,22 @@ namespace Gui_Database
                     Account_table_listview.Items.Add(items);
                 }
                 MessageBox.Show("connected Suscessfully", "Message");
-
+                Payment_Date.Clear();
+                Account_number_box.Clear();
+                Payment_amount_box.Clear();
+                Customer_ID_Box.Clear();
                 con.Close();
             }
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
         }
     }
 }

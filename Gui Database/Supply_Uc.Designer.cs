@@ -44,6 +44,7 @@
             this.Location = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Branch_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Item_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Branch_ID_box
@@ -207,12 +208,26 @@
             this.Item_ID.Text = "Item_ID";
             this.Item_ID.Width = 102;
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(819, 15);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 57;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // Supply_Uc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Branch_ID_box);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Search_in_table_btn);
@@ -247,5 +262,6 @@
         private System.Windows.Forms.ColumnHeader Location;
         private System.Windows.Forms.ColumnHeader Branch_ID;
         private System.Windows.Forms.ColumnHeader Item_ID;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

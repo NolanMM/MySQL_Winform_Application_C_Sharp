@@ -42,6 +42,7 @@
             this.Employee_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label4 = new System.Windows.Forms.Label();
             this.Employee_ID_Box = new System.Windows.Forms.TextBox();
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label3
@@ -192,12 +193,26 @@
             this.Employee_ID_Box.Size = new System.Drawing.Size(160, 25);
             this.Employee_ID_Box.TabIndex = 54;
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(815, 16);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 56;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // Parking_Space_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Employee_ID_Box);
             this.Controls.Add(this.label3);
@@ -230,5 +245,6 @@
         private System.Windows.Forms.ColumnHeader Employee_ID;
         public System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Employee_ID_Box;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

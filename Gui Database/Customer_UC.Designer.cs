@@ -34,19 +34,20 @@
             this.Name_Customer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.City = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label1 = new System.Windows.Forms.Label();
             this.ProvinceState = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.PostalZipCode = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Telephone = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.DateofBirth = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Primary_Language = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Branch_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label1 = new System.Windows.Forms.Label();
             this.Search_in_table_btn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Name_Customer_Box = new System.Windows.Forms.TextBox();
             this.Customer_ID_box = new System.Windows.Forms.TextBox();
             this.Show_Account_table_list = new System.Windows.Forms.Button();
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Customer_table_listview
@@ -99,19 +100,6 @@
             this.City.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.City.Width = 56;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(299, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 59);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Customer Table";
-            // 
             // ProvinceState
             // 
             this.ProvinceState.Text = "Province/State";
@@ -141,6 +129,19 @@
             // 
             this.Branch_ID.Text = "Branch ID";
             this.Branch_ID.Width = 68;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Location = new System.Drawing.Point(299, 42);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(307, 59);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Customer Table";
             // 
             // Search_in_table_btn
             // 
@@ -216,12 +217,26 @@
             this.Show_Account_table_list.UseVisualStyleBackColor = false;
             this.Show_Account_table_list.Click += new System.EventHandler(this.Show_Account_table_list_Click);
             // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(818, 13);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 29;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // Customer_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Search_in_table_btn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label2);
@@ -257,5 +272,6 @@
         private System.Windows.Forms.TextBox Name_Customer_Box;
         private System.Windows.Forms.TextBox Customer_ID_box;
         public System.Windows.Forms.Button Show_Account_table_list;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

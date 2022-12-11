@@ -63,6 +63,13 @@
             this.panelcenter = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SidePanel_Reports_panel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.Side_menu_run_Report_panel = new System.Windows.Forms.Panel();
+            this.Report3_btn = new System.Windows.Forms.Button();
+            this.Report_2_btn = new System.Windows.Forms.Button();
+            this.Report_1_btn = new System.Windows.Forms.Button();
             this.Side_Menu_Panel.SuspendLayout();
             this.SideMenuPanel.SuspendLayout();
             this.Input_panel.SuspendLayout();
@@ -70,12 +77,16 @@
             this.panel2.SuspendLayout();
             this.Logo_of_application.SuspendLayout();
             this.panelcenter.SuspendLayout();
+            this.SidePanel_Reports_panel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Side_Menu_Panel
             // 
             this.Side_Menu_Panel.AutoScroll = true;
             this.Side_Menu_Panel.BackColor = System.Drawing.Color.Black;
+            this.Side_Menu_Panel.Controls.Add(this.SidePanel_Reports_panel);
+            this.Side_Menu_Panel.Controls.Add(this.button2);
             this.Side_Menu_Panel.Controls.Add(this.SideMenuPanel);
             this.Side_Menu_Panel.Controls.Add(this.Show_The_List_Table_Panel);
             this.Side_Menu_Panel.Controls.Add(this.Show_List_table_btn);
@@ -92,9 +103,9 @@
             this.SideMenuPanel.BackColor = System.Drawing.Color.Black;
             this.SideMenuPanel.Controls.Add(this.Input_panel);
             this.SideMenuPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.SideMenuPanel.Location = new System.Drawing.Point(0, 605);
+            this.SideMenuPanel.Location = new System.Drawing.Point(0, 559);
             this.SideMenuPanel.Name = "SideMenuPanel";
-            this.SideMenuPanel.Size = new System.Drawing.Size(204, 397);
+            this.SideMenuPanel.Size = new System.Drawing.Size(204, 396);
             this.SideMenuPanel.TabIndex = 2;
             // 
             // Input_panel
@@ -113,7 +124,7 @@
             this.Input_panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.Input_panel.Location = new System.Drawing.Point(0, 0);
             this.Input_panel.Name = "Input_panel";
-            this.Input_panel.Size = new System.Drawing.Size(204, 396);
+            this.Input_panel.Size = new System.Drawing.Size(204, 393);
             this.Input_panel.TabIndex = 5;
             // 
             // Sidepanel_input
@@ -279,7 +290,7 @@
             // 
             this.Show_The_List_Table_Panel.Controls.Add(this.panel2);
             this.Show_The_List_Table_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Show_The_List_Table_Panel.Location = new System.Drawing.Point(0, 201);
+            this.Show_The_List_Table_Panel.Location = new System.Drawing.Point(0, 155);
             this.Show_The_List_Table_Panel.Name = "Show_The_List_Table_Panel";
             this.Show_The_List_Table_Panel.Size = new System.Drawing.Size(204, 404);
             this.Show_The_List_Table_Panel.TabIndex = 1;
@@ -471,7 +482,7 @@
             this.Show_List_table_btn.ForeColor = System.Drawing.Color.White;
             this.Show_List_table_btn.Image = ((System.Drawing.Image)(resources.GetObject("Show_List_table_btn.Image")));
             this.Show_List_table_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Show_List_table_btn.Location = new System.Drawing.Point(0, 161);
+            this.Show_List_table_btn.Location = new System.Drawing.Point(0, 115);
             this.Show_List_table_btn.Name = "Show_List_table_btn";
             this.Show_List_table_btn.Size = new System.Drawing.Size(204, 40);
             this.Show_List_table_btn.TabIndex = 0;
@@ -488,7 +499,7 @@
             this.Input_tables_btn.ForeColor = System.Drawing.Color.White;
             this.Input_tables_btn.Image = ((System.Drawing.Image)(resources.GetObject("Input_tables_btn.Image")));
             this.Input_tables_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Input_tables_btn.Location = new System.Drawing.Point(0, 121);
+            this.Input_tables_btn.Location = new System.Drawing.Point(0, 75);
             this.Input_tables_btn.Name = "Input_tables_btn";
             this.Input_tables_btn.Size = new System.Drawing.Size(204, 40);
             this.Input_tables_btn.TabIndex = 0;
@@ -502,7 +513,7 @@
             this.Logo_of_application.Dock = System.Windows.Forms.DockStyle.Top;
             this.Logo_of_application.Location = new System.Drawing.Point(0, 0);
             this.Logo_of_application.Name = "Logo_of_application";
-            this.Logo_of_application.Size = new System.Drawing.Size(204, 121);
+            this.Logo_of_application.Size = new System.Drawing.Size(204, 75);
             this.Logo_of_application.TabIndex = 0;
             // 
             // button1
@@ -513,7 +524,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 121);
+            this.button1.Size = new System.Drawing.Size(221, 75);
             this.button1.TabIndex = 0;
             this.button1.Text = "Arnolda_8723388";
             this.button1.UseVisualStyleBackColor = true;
@@ -556,6 +567,99 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Welcome To Database ";
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 955);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(204, 40);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "3 Bussiness Reports";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // SidePanel_Reports_panel
+            // 
+            this.SidePanel_Reports_panel.BackColor = System.Drawing.Color.Black;
+            this.SidePanel_Reports_panel.Controls.Add(this.panel3);
+            this.SidePanel_Reports_panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SidePanel_Reports_panel.Location = new System.Drawing.Point(0, 995);
+            this.SidePanel_Reports_panel.Name = "SidePanel_Reports_panel";
+            this.SidePanel_Reports_panel.Size = new System.Drawing.Size(204, 134);
+            this.SidePanel_Reports_panel.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.Side_menu_run_Report_panel);
+            this.panel3.Controls.Add(this.Report3_btn);
+            this.panel3.Controls.Add(this.Report_2_btn);
+            this.panel3.Controls.Add(this.Report_1_btn);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(204, 131);
+            this.panel3.TabIndex = 5;
+            // 
+            // Side_menu_run_Report_panel
+            // 
+            this.Side_menu_run_Report_panel.BackColor = System.Drawing.Color.White;
+            this.Side_menu_run_Report_panel.ForeColor = System.Drawing.Color.White;
+            this.Side_menu_run_Report_panel.Location = new System.Drawing.Point(1, 0);
+            this.Side_menu_run_Report_panel.Name = "Side_menu_run_Report_panel";
+            this.Side_menu_run_Report_panel.Size = new System.Drawing.Size(10, 40);
+            this.Side_menu_run_Report_panel.TabIndex = 0;
+            // 
+            // Report3_btn
+            // 
+            this.Report3_btn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Report3_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Report3_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Report3_btn.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Report3_btn.ForeColor = System.Drawing.Color.White;
+            this.Report3_btn.Location = new System.Drawing.Point(0, 80);
+            this.Report3_btn.Name = "Report3_btn";
+            this.Report3_btn.Size = new System.Drawing.Size(204, 48);
+            this.Report3_btn.TabIndex = 7;
+            this.Report3_btn.Text = "Search Customer buy from what Branch";
+            this.Report3_btn.UseVisualStyleBackColor = false;
+            this.Report3_btn.Click += new System.EventHandler(this.Report3_btn_Click);
+            // 
+            // Report_2_btn
+            // 
+            this.Report_2_btn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Report_2_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Report_2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Report_2_btn.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Report_2_btn.ForeColor = System.Drawing.Color.White;
+            this.Report_2_btn.Location = new System.Drawing.Point(0, 40);
+            this.Report_2_btn.Name = "Report_2_btn";
+            this.Report_2_btn.Size = new System.Drawing.Size(204, 40);
+            this.Report_2_btn.TabIndex = 8;
+            this.Report_2_btn.Text = "Search parking lot of each staff";
+            this.Report_2_btn.UseVisualStyleBackColor = false;
+            this.Report_2_btn.Click += new System.EventHandler(this.Report_2_btn_Click);
+            // 
+            // Report_1_btn
+            // 
+            this.Report_1_btn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.Report_1_btn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Report_1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Report_1_btn.Font = new System.Drawing.Font("Segoe UI", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Report_1_btn.ForeColor = System.Drawing.Color.White;
+            this.Report_1_btn.Location = new System.Drawing.Point(0, 0);
+            this.Report_1_btn.Name = "Report_1_btn";
+            this.Report_1_btn.Size = new System.Drawing.Size(204, 40);
+            this.Report_1_btn.TabIndex = 2;
+            this.Report_1_btn.Text = "Search the supply for each of branch";
+            this.Report_1_btn.UseVisualStyleBackColor = false;
+            this.Report_1_btn.Click += new System.EventHandler(this.Report_1_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -577,6 +681,8 @@
             this.panel2.ResumeLayout(false);
             this.Logo_of_application.ResumeLayout(false);
             this.panelcenter.ResumeLayout(false);
+            this.SidePanel_Reports_panel.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -617,6 +723,13 @@
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel SidePanel_Reports_panel;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel Side_menu_run_Report_panel;
+        private System.Windows.Forms.Button Report3_btn;
+        private System.Windows.Forms.Button Report_2_btn;
+        private System.Windows.Forms.Button Report_1_btn;
     }
 }
 

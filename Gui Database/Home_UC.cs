@@ -16,5 +16,11 @@ namespace Gui_Database
         {
             InitializeComponent();
         }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
+        }
     }
 }

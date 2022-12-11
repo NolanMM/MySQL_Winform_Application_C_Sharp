@@ -180,12 +180,6 @@
     <Compile Include="Home_UC.Designer.cs">
       <DependentUpon>Home_UC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item_Order_List_Items_UC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Item_Order_List_Items_UC.Designer.cs">
-      <DependentUpon>Item_Order_List_Items_UC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Item_Order_List_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -218,6 +212,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report_1UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report_1UC.Designer.cs">
+      <DependentUpon>Report_1UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_2UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report_2UC.Designer.cs">
+      <DependentUpon>Report_2UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_3UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report_3UC.Designer.cs">
+      <DependentUpon>Report_3UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supply_Uc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -297,6 +309,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report_1UC.resx">
+      <DependentUpon>Report_1UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_2UC.resx">
+      <DependentUpon>Report_2UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_3UC.resx">
+      <DependentUpon>Report_3UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Supply_Uc.resx">
       <DependentUpon>Supply_Uc.cs</DependentUpon>
     </EmbeddedResource>

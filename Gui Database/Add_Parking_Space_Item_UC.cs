@@ -102,5 +102,11 @@ namespace Gui_Database
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
+        }
     }
 }

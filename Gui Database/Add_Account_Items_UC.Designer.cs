@@ -43,6 +43,9 @@
             this.Payment_Date = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Payment_amount_box = new System.Windows.Forms.TextBox();
+            this.Modify_btn = new System.Windows.Forms.Button();
+            this.Delete_Btn = new System.Windows.Forms.Button();
+            this.Exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Account_table_listview
@@ -60,6 +63,7 @@
             this.Account_table_listview.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.Account_table_listview.HideSelection = false;
             this.Account_table_listview.Location = new System.Drawing.Point(76, 91);
+            this.Account_table_listview.MultiSelect = false;
             this.Account_table_listview.Name = "Account_table_listview";
             this.Account_table_listview.Size = new System.Drawing.Size(727, 257);
             this.Account_table_listview.TabIndex = 1;
@@ -106,10 +110,10 @@
             // 
             this.Add_btn.BackColor = System.Drawing.Color.Black;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.Add_btn.Location = new System.Drawing.Point(601, 446);
+            this.Add_btn.ForeColor = System.Drawing.Color.White;
+            this.Add_btn.Location = new System.Drawing.Point(555, 378);
             this.Add_btn.Name = "Add_btn";
-            this.Add_btn.Size = new System.Drawing.Size(202, 45);
+            this.Add_btn.Size = new System.Drawing.Size(322, 45);
             this.Add_btn.TabIndex = 23;
             this.Add_btn.Text = "Add To Table";
             this.Add_btn.UseVisualStyleBackColor = false;
@@ -211,12 +215,52 @@
             this.Payment_amount_box.Size = new System.Drawing.Size(211, 25);
             this.Payment_amount_box.TabIndex = 26;
             // 
+            // Modify_btn
+            // 
+            this.Modify_btn.BackColor = System.Drawing.Color.Black;
+            this.Modify_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Modify_btn.ForeColor = System.Drawing.Color.White;
+            this.Modify_btn.Location = new System.Drawing.Point(555, 440);
+            this.Modify_btn.Name = "Modify_btn";
+            this.Modify_btn.Size = new System.Drawing.Size(322, 45);
+            this.Modify_btn.TabIndex = 28;
+            this.Modify_btn.Text = "Modify Row by Account Number";
+            this.Modify_btn.UseVisualStyleBackColor = false;
+            // 
+            // Delete_Btn
+            // 
+            this.Delete_Btn.BackColor = System.Drawing.Color.Black;
+            this.Delete_Btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Btn.ForeColor = System.Drawing.Color.Maroon;
+            this.Delete_Btn.Location = new System.Drawing.Point(555, 511);
+            this.Delete_Btn.Name = "Delete_Btn";
+            this.Delete_Btn.Size = new System.Drawing.Size(322, 45);
+            this.Delete_Btn.TabIndex = 29;
+            this.Delete_Btn.Text = "Delete Row by Account Number";
+            this.Delete_Btn.UseVisualStyleBackColor = false;
+            // 
+            // Exit_btn
+            // 
+            this.Exit_btn.BackColor = System.Drawing.Color.Black;
+            this.Exit_btn.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.Exit_btn.ForeColor = System.Drawing.Color.DarkRed;
+            this.Exit_btn.Location = new System.Drawing.Point(816, 17);
+            this.Exit_btn.Name = "Exit_btn";
+            this.Exit_btn.Size = new System.Drawing.Size(61, 45);
+            this.Exit_btn.TabIndex = 30;
+            this.Exit_btn.Text = "Exit";
+            this.Exit_btn.UseVisualStyleBackColor = false;
+            this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
+            // 
             // Add_Account_Items_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Exit_btn);
+            this.Controls.Add(this.Delete_Btn);
+            this.Controls.Add(this.Modify_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Payment_amount_box);
             this.Controls.Add(this.label3);
@@ -253,5 +297,8 @@
         private System.Windows.Forms.TextBox Payment_Date;
         public System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Payment_amount_box;
+        public System.Windows.Forms.Button Modify_btn;
+        public System.Windows.Forms.Button Delete_Btn;
+        private System.Windows.Forms.Button Exit_btn;
     }
 }

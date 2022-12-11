@@ -33,6 +33,9 @@ namespace Gui_Database
                 Show_The_List_Table_Panel.Visible = false;
             if (SideMenuPanel.Visible == true)
                 SideMenuPanel.Visible = false;
+            if (SidePanel_Reports_panel.Visible == true)
+                SidePanel_Reports_panel.Visible = false;
+            
         }
         private void showSubMenu(Panel subMenu)
         {
@@ -51,6 +54,10 @@ namespace Gui_Database
         {
             showSubMenu(SideMenuPanel);
         }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            showSubMenu(SidePanel_Reports_panel);
+        }
         private void movesidepanel_Show(Button btn)
         {
             sidepanel_Show.Top = btn.Top;
@@ -61,10 +68,16 @@ namespace Gui_Database
             Sidepanel_input.Top = btn.Top;
             Sidepanel_input.Height = btn.Height;
         }
+        private void moveSidepanel_report(Button btn)
+        {
+            Side_menu_run_Report_panel.Top = btn.Top;
+            Side_menu_run_Report_panel.Height = btn.Height;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            if (SidePanel_Reports_panel.Visible == true)
+                SidePanel_Reports_panel.Visible = false;
         }
         private void addUC(UserControl uc)
         {
@@ -218,6 +231,27 @@ namespace Gui_Database
         {
             Home_UC Home = new Home_UC();
             addUC(Home);
+        }
+
+        private void Report_1_btn_Click(object sender, EventArgs e)
+        {
+            Report_1UC Report1 = new Report_1UC();
+            addUC(Report1);
+            moveSidepanel_report(Report_1_btn);
+        }
+
+        private void Report_2_btn_Click(object sender, EventArgs e)
+        {
+            Report_2UC Report2 = new Report_2UC();
+            addUC(Report2);
+            moveSidepanel_report(Report_2_btn);
+        }
+
+        private void Report3_btn_Click(object sender, EventArgs e)
+        {
+            Report_3UC Report3 = new Report_3UC();
+            addUC(Report3);
+            moveSidepanel_report(Report3_btn);
         }
     }
 }

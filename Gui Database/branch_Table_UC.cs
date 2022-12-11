@@ -134,5 +134,10 @@ namespace Gui_Database
             }
         }
 
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
+        }
     }
 }
