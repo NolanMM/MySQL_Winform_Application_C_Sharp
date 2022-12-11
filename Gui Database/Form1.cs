@@ -253,5 +253,11 @@ namespace Gui_Database
             addUC(Report3);
             moveSidepanel_report(Report3_btn);
         }
+
+        private void Exit_btn_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
+
+        }
     }
 }
