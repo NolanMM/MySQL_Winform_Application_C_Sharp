@@ -90,6 +90,66 @@
     <Compile Include="Accounts_Table_Uc.Designer.cs">
       <DependentUpon>Accounts_Table_Uc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Account_Items_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Account_Items_UC.Designer.cs">
+      <DependentUpon>Add_Account_Items_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Branches_Items_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Branches_Items_UC.Designer.cs">
+      <DependentUpon>Add_Branches_Items_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Customer_Items_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Customer_Items_UC.Designer.cs">
+      <DependentUpon>Add_Customer_Items_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Employee_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Employee_Item_UC.Designer.cs">
+      <DependentUpon>Add_Employee_Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Item_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Item_Item_UC.Designer.cs">
+      <DependentUpon>Add_Item_Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Item_Order_List_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Item_Order_List_Item_UC.Designer.cs">
+      <DependentUpon>Add_Item_Order_List_Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Orders_Items_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Orders_Items_UC.Designer.cs">
+      <DependentUpon>Add_Orders_Items_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Parking_Space_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Parking_Space_Item_UC.Designer.cs">
+      <DependentUpon>Add_Parking_Space_Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Parts_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Parts_Item_UC.Designer.cs">
+      <DependentUpon>Add_Parts_Item_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Supply_Item_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Supply_Item_UC.Designer.cs">
+      <DependentUpon>Add_Supply_Item_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="branch_Table_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -113,6 +173,12 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item_Order_List_Items_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item_Order_List_Items_UC.Designer.cs">
+      <DependentUpon>Item_Order_List_Items_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Item_Order_List_UC.cs">
       <SubType>UserControl</SubType>
