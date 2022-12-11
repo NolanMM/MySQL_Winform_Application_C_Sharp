@@ -221,6 +221,36 @@
     <EmbeddedResource Include="Accounts_Table_Uc.resx">
       <DependentUpon>Accounts_Table_Uc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Account_Items_UC.resx">
+      <DependentUpon>Add_Account_Items_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Branches_Items_UC.resx">
+      <DependentUpon>Add_Branches_Items_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Customer_Items_UC.resx">
+      <DependentUpon>Add_Customer_Items_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Employee_Item_UC.resx">
+      <DependentUpon>Add_Employee_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Item_Item_UC.resx">
+      <DependentUpon>Add_Item_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Item_Order_List_Item_UC.resx">
+      <DependentUpon>Add_Item_Order_List_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Orders_Items_UC.resx">
+      <DependentUpon>Add_Orders_Items_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Parking_Space_Item_UC.resx">
+      <DependentUpon>Add_Parking_Space_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Parts_Item_UC.resx">
+      <DependentUpon>Add_Parts_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Supply_Item_UC.resx">
+      <DependentUpon>Add_Supply_Item_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="branch_Table_UC.resx">
       <DependentUpon>branch_Table_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +286,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Supply_Uc.resx">
       <DependentUpon>Supply_Uc.cs</DependentUpon>
@@ -273,6 +304,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nasa-53884-unsplash.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -161,6 +161,8 @@ namespace Gui_Database
 
         private void Add_Account_Table_btn_Click(object sender, EventArgs e)
         {
+            Add_Account_Items_UC UCSAccount_Add = new Add_Account_Items_UC();
+            addUC(UCSAccount_Add);
             moveSidepanel_input(Add_Account_Table_btn);
         }
 
