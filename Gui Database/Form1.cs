@@ -146,16 +146,22 @@ namespace Gui_Database
 
         private void Add_branch_table_btn_Click(object sender, EventArgs e)
         {
+            Add_Branches_Items_UC UCBranch_Add = new Add_Branches_Items_UC();
+            addUC(UCBranch_Add);
             moveSidepanel_input(Add_branch_table_btn);
         }
 
         private void Add_orders_table_btn_Click(object sender, EventArgs e)
         {
+            Add_Orders_Items_UC UCOrder_Add = new Add_Orders_Items_UC();
+            addUC(UCOrder_Add);
             moveSidepanel_input(Add_orders_table_btn);
         }
 
         private void Add_Item_Order_List_table_btn_Click(object sender, EventArgs e)
         {
+            Add_Item_Order_List_Item_UC UCList_Item_Add = new Add_Orders_Items_UC();
+            addUC(UCList_Item_Add);
             moveSidepanel_input(Add_Item_Order_List_table_btn);
         }
 
@@ -168,31 +174,43 @@ namespace Gui_Database
 
         private void Add_Customer_table_btn_Click(object sender, EventArgs e)
         {
+            Add_Customer_Items_UC UCCustomer_Add = new Add_Customer_Items_UC();
+            addUC(UCCustomer_Add);
             moveSidepanel_input(Add_Customer_table_btn);
         }
 
         private void Add_Parking_Space_Table_btn_Click(object sender, EventArgs e)
         {
+            Add_Parking_Space_Item_UC UCParking_Space_Add = new Add_Parking_Space_Item_UC();
+            addUC(UCParking_Space_Add);
             moveSidepanel_input(Add_Parking_Space_Table_btn);
         }
 
         private void Add_Items_btn_Click(object sender, EventArgs e)
         {
+            Add_Item_Item_UC UCItems_Add = new Add_Item_Item_UC();
+            addUC(UCItems_Add);
             moveSidepanel_input(Add_Items_btn);
         }
 
         private void Add_Parts_Table_btn_Click(object sender, EventArgs e)
         {
+            Add_Parts_Item_UC UCParts_Add = new Add_Parts_Item_UC();
+            addUC(UCParts_Add);
             moveSidepanel_input(Add_Parts_Table_btn);
         }
 
         private void Add_Employee_Table_btn_Click(object sender, EventArgs e)
         {
+            Add_Employee_Item_UC UCemployee_Add = new Add_Employee_Item_UC();
+            addUC(UCemployee_Add);
             moveSidepanel_input(Add_Employee_Table_btn);
         }
 
         private void Add_Supply_Table_btn_Click(object sender, EventArgs e)
         {
+            Add_Supply_Item_UC UCSupply_Add = new Add_Supply_Item_UC();
+            addUC(UCSupply_Add);
             moveSidepanel_input(Add_Supply_Table_btn);
         }
     }
