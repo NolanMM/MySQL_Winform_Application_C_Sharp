@@ -18,9 +18,30 @@ namespace Gui_Database
             InitializeComponent();
         }
         string connstring = "server=localhost;uid=root;pwd=Connhenbeo1;database=arnolda_8723388";
-
+        void Count_Item_Function(string table)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string cmd_line = "SELECT COUNT(*) FROM " + table;
+                    using (var cmd = new MySqlCommand(cmd_line, conn))
+                    {
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        Count_Item_box.Text = count.ToString();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Show_Account_table_list_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             Items_listview.Items.Clear();
 
             try
@@ -48,6 +69,9 @@ namespace Gui_Database
                     Items_listview.Items.Add(items);
                 }
                 con.Close();
+                Count_Item_Function("item");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {
@@ -57,6 +81,10 @@ namespace Gui_Database
 
         private void Search_in_table_btn_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
+            int count = 0;
             Items_listview.Items.Clear();
 
             bool found = false;
@@ -91,6 +119,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -111,6 +141,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -131,6 +163,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -151,6 +185,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -171,6 +207,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -191,6 +229,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -211,6 +251,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -222,6 +264,9 @@ namespace Gui_Database
                 Order_Item_Box.Clear();
                 Supply_ID_Box.Clear();
                 con.Close();
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
+                Count_Item_box.Text = count.ToString();
             }
             catch (MySqlException ex)
             {

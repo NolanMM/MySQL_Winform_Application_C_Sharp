@@ -18,9 +18,30 @@ namespace Gui_Database
             InitializeComponent();
         }
         string connstring = "server=localhost;uid=root;pwd=Connhenbeo1;database=arnolda_8723388";
-
+        void Count_Item_Function(string table)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string cmd_line = "SELECT COUNT(*) FROM " + table;
+                    using (var cmd = new MySqlCommand(cmd_line, conn))
+                    {
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        Count_Item_box.Text = count.ToString();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Add_Parking_Space_Item_UC_Load(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             Parking_Space_table_listview.Items.Clear();
 
             try
@@ -44,6 +65,9 @@ namespace Gui_Database
                     Parking_Space_table_listview.Items.Add(items);
                 }
                 con.Close();
+                Count_Item_Function("parking_space");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {
@@ -53,6 +77,9 @@ namespace Gui_Database
 
         private void Add_btn_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            Parking_Space_table_listview.Items.Clear();
             try
             {
                 string Space_Parking_Id = Parking_Space_ID_box.Text.ToString();
@@ -94,8 +121,13 @@ namespace Gui_Database
                     Parking_Space_table_listview.Items.Add(items);
                 }
                 MessageBox.Show("Added Suscessfully", "Message");
-
+                Parking_Space_ID_box.Clear();
+                Location_Box.Clear();
+                Employee_ID_Box.Clear();
                 con.Close();
+                Count_Item_Function("parking_space");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {

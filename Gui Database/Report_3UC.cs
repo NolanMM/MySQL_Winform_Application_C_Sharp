@@ -21,6 +21,9 @@ namespace Gui_Database
 
         private void Show_Account_table_list_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            int count = 0;
             Report3_listview.Items.Clear();
             try
             {
@@ -40,8 +43,13 @@ namespace Gui_Database
                     //MessageBox.Show("Account Number: " + reader["AccountNumber"] + " Payment Date " + reader["PaymentDate"]);
                     ListViewItem items = new ListViewItem(_Item);
                     Report3_listview.Items.Add(items);
+                    count++;
+
                 }
                 con.Close();
+                Count_Item_box.Text = count.ToString();
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {
@@ -51,6 +59,10 @@ namespace Gui_Database
 
         private void Search_in_table_btn_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
+            int count = 0;
             Report3_listview.Items.Clear();
 
             bool found = false;
@@ -81,6 +93,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Report3_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -96,6 +110,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Report3_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -111,6 +127,8 @@ namespace Gui_Database
                             ListViewItem items = new ListViewItem(_Item);
                             Report3_listview.Items.Add(items);
                             found = true;
+                            count++;
+
                         }
                     }
                 }
@@ -121,6 +139,9 @@ namespace Gui_Database
                 Name_of_Customer.Clear();
                 Name_Of_branch_box.Clear();
                 con.Close();
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
+                Count_Item_box.Text = count.ToString();
             }
             catch (MySqlException ex)
             {

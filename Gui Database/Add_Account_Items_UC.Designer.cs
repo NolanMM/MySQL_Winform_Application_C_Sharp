@@ -43,9 +43,11 @@
             this.Payment_Date = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Payment_amount_box = new System.Windows.Forms.TextBox();
-            this.Modify_btn = new System.Windows.Forms.Button();
-            this.Delete_Btn = new System.Windows.Forms.Button();
             this.Exit_btn = new System.Windows.Forms.Button();
+            this.Time_Execute_box = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Count_Item_box = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Account_table_listview
@@ -111,9 +113,9 @@
             this.Add_btn.BackColor = System.Drawing.Color.Black;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_btn.ForeColor = System.Drawing.Color.White;
-            this.Add_btn.Location = new System.Drawing.Point(555, 378);
+            this.Add_btn.Location = new System.Drawing.Point(701, 385);
             this.Add_btn.Name = "Add_btn";
-            this.Add_btn.Size = new System.Drawing.Size(322, 45);
+            this.Add_btn.Size = new System.Drawing.Size(176, 45);
             this.Add_btn.TabIndex = 23;
             this.Add_btn.Text = "Add To Table";
             this.Add_btn.UseVisualStyleBackColor = false;
@@ -126,7 +128,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(317, 480);
+            this.label5.Location = new System.Drawing.Point(275, 480);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(173, 40);
             this.label5.TabIndex = 22;
@@ -139,7 +141,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(69, 387);
+            this.label2.Location = new System.Drawing.Point(27, 387);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 36);
             this.label2.TabIndex = 21;
@@ -151,7 +153,7 @@
             this.Customer_ID_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Customer_ID_Box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Customer_ID_Box.ForeColor = System.Drawing.Color.White;
-            this.Customer_ID_Box.Location = new System.Drawing.Point(315, 523);
+            this.Customer_ID_Box.Location = new System.Drawing.Point(273, 523);
             this.Customer_ID_Box.Name = "Customer_ID_Box";
             this.Customer_ID_Box.Size = new System.Drawing.Size(225, 25);
             this.Customer_ID_Box.TabIndex = 20;
@@ -162,7 +164,7 @@
             this.Account_number_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Account_number_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Account_number_box.ForeColor = System.Drawing.Color.White;
-            this.Account_number_box.Location = new System.Drawing.Point(76, 426);
+            this.Account_number_box.Location = new System.Drawing.Point(34, 426);
             this.Account_number_box.Name = "Account_number_box";
             this.Account_number_box.Size = new System.Drawing.Size(211, 25);
             this.Account_number_box.TabIndex = 19;
@@ -174,7 +176,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(317, 387);
+            this.label3.Location = new System.Drawing.Point(275, 387);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(193, 36);
             this.label3.TabIndex = 25;
@@ -186,7 +188,7 @@
             this.Payment_Date.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Payment_Date.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Payment_Date.ForeColor = System.Drawing.Color.White;
-            this.Payment_Date.Location = new System.Drawing.Point(324, 426);
+            this.Payment_Date.Location = new System.Drawing.Point(282, 426);
             this.Payment_Date.Name = "Payment_Date";
             this.Payment_Date.Size = new System.Drawing.Size(211, 25);
             this.Payment_Date.TabIndex = 24;
@@ -198,7 +200,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(69, 484);
+            this.label4.Location = new System.Drawing.Point(27, 484);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(242, 36);
             this.label4.TabIndex = 27;
@@ -210,34 +212,10 @@
             this.Payment_amount_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Payment_amount_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Payment_amount_box.ForeColor = System.Drawing.Color.White;
-            this.Payment_amount_box.Location = new System.Drawing.Point(76, 523);
+            this.Payment_amount_box.Location = new System.Drawing.Point(34, 523);
             this.Payment_amount_box.Name = "Payment_amount_box";
             this.Payment_amount_box.Size = new System.Drawing.Size(211, 25);
             this.Payment_amount_box.TabIndex = 26;
-            // 
-            // Modify_btn
-            // 
-            this.Modify_btn.BackColor = System.Drawing.Color.Black;
-            this.Modify_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Modify_btn.ForeColor = System.Drawing.Color.White;
-            this.Modify_btn.Location = new System.Drawing.Point(555, 440);
-            this.Modify_btn.Name = "Modify_btn";
-            this.Modify_btn.Size = new System.Drawing.Size(322, 45);
-            this.Modify_btn.TabIndex = 28;
-            this.Modify_btn.Text = "Modify Row by Account Number";
-            this.Modify_btn.UseVisualStyleBackColor = false;
-            // 
-            // Delete_Btn
-            // 
-            this.Delete_Btn.BackColor = System.Drawing.Color.Black;
-            this.Delete_Btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete_Btn.ForeColor = System.Drawing.Color.Maroon;
-            this.Delete_Btn.Location = new System.Drawing.Point(555, 511);
-            this.Delete_Btn.Name = "Delete_Btn";
-            this.Delete_Btn.Size = new System.Drawing.Size(322, 45);
-            this.Delete_Btn.TabIndex = 29;
-            this.Delete_Btn.Text = "Delete Row by Account Number";
-            this.Delete_Btn.UseVisualStyleBackColor = false;
             // 
             // Exit_btn
             // 
@@ -252,15 +230,69 @@
             this.Exit_btn.UseVisualStyleBackColor = false;
             this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
+            // Time_Execute_box
+            // 
+            this.Time_Execute_box.BackColor = System.Drawing.Color.Black;
+            this.Time_Execute_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Time_Execute_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Time_Execute_box.ForeColor = System.Drawing.Color.White;
+            this.Time_Execute_box.Location = new System.Drawing.Point(526, 523);
+            this.Time_Execute_box.Name = "Time_Execute_box";
+            this.Time_Execute_box.ReadOnly = true;
+            this.Time_Execute_box.Size = new System.Drawing.Size(179, 25);
+            this.Time_Execute_box.TabIndex = 34;
+            this.Time_Execute_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(526, 480);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 40);
+            this.label6.TabIndex = 33;
+            this.label6.Text = "Time Execute";
+            // 
+            // Count_Item_box
+            // 
+            this.Count_Item_box.BackColor = System.Drawing.Color.Black;
+            this.Count_Item_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Count_Item_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Count_Item_box.ForeColor = System.Drawing.Color.White;
+            this.Count_Item_box.Location = new System.Drawing.Point(533, 426);
+            this.Count_Item_box.Name = "Count_Item_box";
+            this.Count_Item_box.ReadOnly = true;
+            this.Count_Item_box.Size = new System.Drawing.Size(152, 25);
+            this.Count_Item_box.TabIndex = 32;
+            this.Count_Item_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(533, 383);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 40);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Count Item";
+            // 
             // Add_Account_Items_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Time_Execute_box);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Count_Item_box);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Exit_btn);
-            this.Controls.Add(this.Delete_Btn);
-            this.Controls.Add(this.Modify_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Payment_amount_box);
             this.Controls.Add(this.label3);
@@ -297,8 +329,10 @@
         private System.Windows.Forms.TextBox Payment_Date;
         public System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Payment_amount_box;
-        public System.Windows.Forms.Button Modify_btn;
-        public System.Windows.Forms.Button Delete_Btn;
         private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.TextBox Time_Execute_box;
+        public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Count_Item_box;
+        public System.Windows.Forms.Label label7;
     }
 }

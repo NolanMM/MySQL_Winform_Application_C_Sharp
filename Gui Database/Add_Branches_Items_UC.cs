@@ -18,9 +18,30 @@ namespace Gui_Database
             InitializeComponent();
         }
         string connstring = "server=localhost;uid=root;pwd=Connhenbeo1;database=arnolda_8723388";
-
+        void Count_Item_Function(string table)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string cmd_line = "SELECT COUNT(*) FROM " + table;
+                    using (var cmd = new MySqlCommand(cmd_line, conn))
+                    {
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        Count_Item_box.Text = count.ToString();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Add_btn_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             try {
                 string Branch_Id = Branch_Id_box.Text.ToString();
                 string Branch_Name = Name_Branch_box.Text.ToString();
@@ -54,6 +75,7 @@ namespace Gui_Database
                 sql = "select * from branch";
                 MySqlCommand cmd_2 = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd_2.ExecuteReader();
+                Branch_listview.Items.Clear();
                 while (reader.Read())
                 {
                     string[] _Item = new string[4];
@@ -65,9 +87,16 @@ namespace Gui_Database
                     ListViewItem items = new ListViewItem(_Item);
                     Branch_listview.Items.Add(items);
                 }
-                MessageBox.Show("connected Suscessfully", "Message");
+                //MessageBox.Show("connected Suscessfully", "Message");
 
+                Branch_Id_box.Clear();
+                Name_Branch_box.Clear();
+                Location_box.Clear();
+                Customer_ID_Box.Clear();
                 con.Close();
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
+                Count_Item_Function("branch");
             }
             catch (MySqlException ex)
             {
@@ -77,6 +106,8 @@ namespace Gui_Database
 
         private void Add_Branches_Items_UC_Load(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             try
             {
                 MySqlConnection con = new MySqlConnection();
@@ -99,6 +130,9 @@ namespace Gui_Database
                 }
 
                 con.Close();
+                Count_Item_Function("branch");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {

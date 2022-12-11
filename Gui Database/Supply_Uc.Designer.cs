@@ -45,6 +45,10 @@
             this.Branch_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Item_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Exit_btn = new System.Windows.Forms.Button();
+            this.Time_Execute_box = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.Count_Item_box = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Branch_ID_box
@@ -53,7 +57,7 @@
             this.Branch_ID_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Branch_ID_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Branch_ID_box.ForeColor = System.Drawing.Color.White;
-            this.Branch_ID_box.Location = new System.Drawing.Point(356, 467);
+            this.Branch_ID_box.Location = new System.Drawing.Point(131, 529);
             this.Branch_ID_box.Name = "Branch_ID_box";
             this.Branch_ID_box.Size = new System.Drawing.Size(160, 25);
             this.Branch_ID_box.TabIndex = 56;
@@ -65,7 +69,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(633, 420);
+            this.label3.Location = new System.Drawing.Point(673, 403);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 40);
             this.label3.TabIndex = 55;
@@ -76,7 +80,7 @@
             this.Search_in_table_btn.BackColor = System.Drawing.Color.Black;
             this.Search_in_table_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Search_in_table_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.Search_in_table_btn.Location = new System.Drawing.Point(82, 531);
+            this.Search_in_table_btn.Location = new System.Drawing.Point(667, 481);
             this.Search_in_table_btn.Name = "Search_in_table_btn";
             this.Search_in_table_btn.Size = new System.Drawing.Size(202, 45);
             this.Search_in_table_btn.TabIndex = 54;
@@ -91,7 +95,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(349, 424);
+            this.label5.Location = new System.Drawing.Point(124, 486);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(141, 40);
             this.label5.TabIndex = 53;
@@ -104,7 +108,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(75, 424);
+            this.label2.Location = new System.Drawing.Point(115, 407);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 36);
             this.label2.TabIndex = 52;
@@ -116,7 +120,7 @@
             this.Item_ID_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Item_ID_Box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Item_ID_Box.ForeColor = System.Drawing.Color.White;
-            this.Item_ID_Box.Location = new System.Drawing.Point(640, 467);
+            this.Item_ID_Box.Location = new System.Drawing.Point(680, 450);
             this.Item_ID_Box.Name = "Item_ID_Box";
             this.Item_ID_Box.Size = new System.Drawing.Size(160, 25);
             this.Item_ID_Box.TabIndex = 51;
@@ -127,7 +131,7 @@
             this.Supply_ID_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Supply_ID_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Supply_ID_box.ForeColor = System.Drawing.Color.White;
-            this.Supply_ID_box.Location = new System.Drawing.Point(82, 463);
+            this.Supply_ID_box.Location = new System.Drawing.Point(122, 446);
             this.Supply_ID_box.Name = "Supply_ID_box";
             this.Supply_ID_box.Size = new System.Drawing.Size(211, 25);
             this.Supply_ID_box.TabIndex = 50;
@@ -137,7 +141,7 @@
             this.Show_Account_table_list.BackColor = System.Drawing.Color.Black;
             this.Show_Account_table_list.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Show_Account_table_list.ForeColor = System.Drawing.Color.Snow;
-            this.Show_Account_table_list.Location = new System.Drawing.Point(575, 531);
+            this.Show_Account_table_list.Location = new System.Drawing.Point(667, 541);
             this.Show_Account_table_list.Name = "Show_Account_table_list";
             this.Show_Account_table_list.Size = new System.Drawing.Size(202, 45);
             this.Show_Account_table_list.TabIndex = 49;
@@ -221,12 +225,68 @@
             this.Exit_btn.UseVisualStyleBackColor = false;
             this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
+            // Time_Execute_box
+            // 
+            this.Time_Execute_box.BackColor = System.Drawing.Color.Black;
+            this.Time_Execute_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Time_Execute_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Time_Execute_box.ForeColor = System.Drawing.Color.White;
+            this.Time_Execute_box.Location = new System.Drawing.Point(383, 539);
+            this.Time_Execute_box.Name = "Time_Execute_box";
+            this.Time_Execute_box.ReadOnly = true;
+            this.Time_Execute_box.Size = new System.Drawing.Size(179, 25);
+            this.Time_Execute_box.TabIndex = 61;
+            this.Time_Execute_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label4.Location = new System.Drawing.Point(383, 496);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(179, 40);
+            this.label4.TabIndex = 60;
+            this.label4.Text = "Time Execute";
+            // 
+            // Count_Item_box
+            // 
+            this.Count_Item_box.BackColor = System.Drawing.Color.Black;
+            this.Count_Item_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Count_Item_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Count_Item_box.ForeColor = System.Drawing.Color.White;
+            this.Count_Item_box.Location = new System.Drawing.Point(383, 446);
+            this.Count_Item_box.Name = "Count_Item_box";
+            this.Count_Item_box.ReadOnly = true;
+            this.Count_Item_box.Size = new System.Drawing.Size(152, 25);
+            this.Count_Item_box.TabIndex = 59;
+            this.Count_Item_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(383, 403);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(152, 40);
+            this.label6.TabIndex = 58;
+            this.label6.Text = "Count Item";
+            // 
             // Supply_Uc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Time_Execute_box);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Count_Item_box);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Branch_ID_box);
             this.Controls.Add(this.label3);
@@ -263,5 +323,9 @@
         private System.Windows.Forms.ColumnHeader Branch_ID;
         private System.Windows.Forms.ColumnHeader Item_ID;
         private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.TextBox Time_Execute_box;
+        public System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox Count_Item_box;
+        public System.Windows.Forms.Label label6;
     }
 }

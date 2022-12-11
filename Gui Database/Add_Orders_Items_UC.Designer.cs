@@ -47,6 +47,10 @@
             this.Credit_box = new System.Windows.Forms.ComboBox();
             this.Add_btn = new System.Windows.Forms.Button();
             this.Exit_btn = new System.Windows.Forms.Button();
+            this.Count_Item_box = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.Time_Execute_box = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Branch_ID_box
@@ -261,12 +265,68 @@
             this.Exit_btn.UseVisualStyleBackColor = false;
             this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
+            // Count_Item_box
+            // 
+            this.Count_Item_box.BackColor = System.Drawing.Color.Black;
+            this.Count_Item_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Count_Item_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Count_Item_box.ForeColor = System.Drawing.Color.White;
+            this.Count_Item_box.Location = new System.Drawing.Point(648, 54);
+            this.Count_Item_box.Name = "Count_Item_box";
+            this.Count_Item_box.ReadOnly = true;
+            this.Count_Item_box.Size = new System.Drawing.Size(152, 25);
+            this.Count_Item_box.TabIndex = 73;
+            this.Count_Item_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(648, 11);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 40);
+            this.label7.TabIndex = 72;
+            this.label7.Text = "Count Item";
+            // 
+            // Time_Execute_box
+            // 
+            this.Time_Execute_box.BackColor = System.Drawing.Color.Black;
+            this.Time_Execute_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Time_Execute_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Time_Execute_box.ForeColor = System.Drawing.Color.White;
+            this.Time_Execute_box.Location = new System.Drawing.Point(56, 54);
+            this.Time_Execute_box.Name = "Time_Execute_box";
+            this.Time_Execute_box.ReadOnly = true;
+            this.Time_Execute_box.Size = new System.Drawing.Size(179, 25);
+            this.Time_Execute_box.TabIndex = 75;
+            this.Time_Execute_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(56, 11);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(179, 40);
+            this.label8.TabIndex = 74;
+            this.label8.Text = "Time Execute";
+            // 
             // Add_Orders_Items_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Time_Execute_box);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.Count_Item_box);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.Credit_box);
@@ -310,5 +370,9 @@
         private System.Windows.Forms.ComboBox Credit_box;
         public System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.TextBox Count_Item_box;
+        public System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox Time_Execute_box;
+        public System.Windows.Forms.Label label8;
     }
 }

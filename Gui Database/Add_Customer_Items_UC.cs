@@ -18,9 +18,30 @@ namespace Gui_Database
             InitializeComponent();
         }
         string connstring = "server=localhost;uid=root;pwd=Connhenbeo1;database=arnolda_8723388";
-
+        void Count_Item_Function(string table)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string cmd_line = "SELECT COUNT(*) FROM " + table;
+                    using (var cmd = new MySqlCommand(cmd_line, conn))
+                    {
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        Count_Item_box.Text = count.ToString();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Add_Customer_Items_UC_Load(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             Customer_table_listview.Items.Clear();
 
             try
@@ -50,6 +71,9 @@ namespace Gui_Database
                     Customer_table_listview.Items.Add(items);
                 }
                 con.Close();
+                Count_Item_Function("customer");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {
@@ -59,6 +83,11 @@ namespace Gui_Database
 
         private void Add_btn_Click(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+            Customer_table_listview.Items.Clear();
+
+
             try
             {
                 int telephone_Unknow = 0;
@@ -186,7 +215,22 @@ namespace Gui_Database
                 }
                 MessageBox.Show("Added Suscessfully", "Message");
 
+                Customer_ID_box.Clear();
+                Name_Customer_Box.Clear();
+                Address_box.Clear();
+                City_box.Clear();
+                Province_State_box.Clear();
+                Postal_Zip_Code_box.Clear();
+                Telephone_box.Clear();
+                Date_Of_birth_box.Clear();
+                Primary_Language_box.Clear();
+                Branch_ID_box.Clear();
+
                 con.Close();
+
+                Count_Item_Function("customer");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {

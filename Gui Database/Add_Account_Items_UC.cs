@@ -20,9 +20,30 @@ namespace Gui_Database
             InitializeComponent();
         }
         string connstring = "server=localhost;uid=root;pwd=Connhenbeo1;database=arnolda_8723388";
-
+        void Count_Item_Function(string table)
+        {
+            try
+            {
+                using (var conn = new MySqlConnection(connstring))
+                {
+                    conn.Open();
+                    string cmd_line = "SELECT COUNT(*) FROM " + table;
+                    using (var cmd = new MySqlCommand(cmd_line, conn))
+                    {
+                        int count = Convert.ToInt32(cmd.ExecuteScalar());
+                        Count_Item_box.Text = count.ToString();
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void Add_Account_Items_UC_Load(object sender, EventArgs e)
         {
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             try
             {
                 MySqlConnection con = new MySqlConnection();
@@ -45,6 +66,11 @@ namespace Gui_Database
                 }
 
                 con.Close();
+
+                Count_Item_Function("accounts");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
+
             }
             catch (MySqlException ex)
             {
@@ -54,6 +80,11 @@ namespace Gui_Database
 
         private void Show_Account_table_list_Click(object sender, EventArgs e)
         {
+            Account_table_listview.Items.Clear();
+
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
+
             try
             {
                 MySqlConnection con = new MySqlConnection();
@@ -76,6 +107,8 @@ namespace Gui_Database
                 }
 
                 con.Close();
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
             }
             catch (MySqlException ex)
             {
@@ -85,6 +118,11 @@ namespace Gui_Database
 
         private void Add_btn_Click(object sender, EventArgs e)
         {
+            Account_table_listview.Items.Clear();
+
+            //Account_table_listview.Clear();
+            var watch = new System.Diagnostics.Stopwatch();
+            watch.Start();
             try
             {
                 //DateTime date2 = new DateTime(2022, 11, 01, 00, 00, 00);
@@ -175,12 +213,17 @@ namespace Gui_Database
                     ListViewItem items = new ListViewItem(_Item);
                     Account_table_listview.Items.Add(items);
                 }
-                MessageBox.Show("connected Suscessfully", "Message");
+                //MessageBox.Show("connected Suscessfully", "Message");
                 Payment_Date.Clear();
                 Account_number_box.Clear();
                 Payment_amount_box.Clear();
                 Customer_ID_Box.Clear();
                 con.Close();
+
+                Count_Item_Function("accounts");
+                watch.Stop();
+                Time_Execute_box.Text = watch.Elapsed.ToString();
+
             }
             catch (MySqlException ex)
             {

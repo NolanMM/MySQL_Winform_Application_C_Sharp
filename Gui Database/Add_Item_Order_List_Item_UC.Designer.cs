@@ -50,6 +50,10 @@
             this.Item_Name_box = new System.Windows.Forms.TextBox();
             this.Add_btn = new System.Windows.Forms.Button();
             this.Exit_btn = new System.Windows.Forms.Button();
+            this.Count_Item_box = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.Time_Execute_box = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -203,7 +207,7 @@
             this.Order_ID_box.ForeColor = System.Drawing.Color.White;
             this.Order_ID_box.Location = new System.Drawing.Point(510, 539);
             this.Order_ID_box.Name = "Order_ID_box";
-            this.Order_ID_box.Size = new System.Drawing.Size(225, 25);
+            this.Order_ID_box.Size = new System.Drawing.Size(127, 25);
             this.Order_ID_box.TabIndex = 51;
             // 
             // Date_Payment_box
@@ -291,12 +295,68 @@
             this.Exit_btn.UseVisualStyleBackColor = false;
             this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
+            // Count_Item_box
+            // 
+            this.Count_Item_box.BackColor = System.Drawing.Color.Black;
+            this.Count_Item_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Count_Item_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Count_Item_box.ForeColor = System.Drawing.Color.White;
+            this.Count_Item_box.Location = new System.Drawing.Point(10, 64);
+            this.Count_Item_box.Name = "Count_Item_box";
+            this.Count_Item_box.ReadOnly = true;
+            this.Count_Item_box.Size = new System.Drawing.Size(152, 25);
+            this.Count_Item_box.TabIndex = 61;
+            this.Count_Item_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.Black;
+            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label8.Location = new System.Drawing.Point(10, 21);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(152, 40);
+            this.label8.TabIndex = 60;
+            this.label8.Text = "Count Item";
+            // 
+            // Time_Execute_box
+            // 
+            this.Time_Execute_box.BackColor = System.Drawing.Color.Black;
+            this.Time_Execute_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Time_Execute_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Time_Execute_box.ForeColor = System.Drawing.Color.White;
+            this.Time_Execute_box.Location = new System.Drawing.Point(694, 539);
+            this.Time_Execute_box.Name = "Time_Execute_box";
+            this.Time_Execute_box.ReadOnly = true;
+            this.Time_Execute_box.Size = new System.Drawing.Size(179, 25);
+            this.Time_Execute_box.TabIndex = 63;
+            this.Time_Execute_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.Black;
+            this.label9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Location = new System.Drawing.Point(694, 492);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(179, 40);
+            this.label9.TabIndex = 62;
+            this.label9.Text = "Time Execute";
+            // 
             // Add_Item_Order_List_Item_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Time_Execute_box);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Count_Item_box);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.Add_btn);
             this.Controls.Add(this.label6);
@@ -345,5 +405,9 @@
         private System.Windows.Forms.TextBox Item_Name_box;
         public System.Windows.Forms.Button Add_btn;
         private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.TextBox Count_Item_box;
+        public System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox Time_Execute_box;
+        public System.Windows.Forms.Label label9;
     }
 }

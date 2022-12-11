@@ -45,6 +45,10 @@
             this.Location = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Supply_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Exit_btn = new System.Windows.Forms.Button();
+            this.Time_Execute_box = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Count_Item_box = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label4
@@ -54,7 +58,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Location = new System.Drawing.Point(80, 511);
+            this.label4.Location = new System.Drawing.Point(11, 510);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 36);
             this.label4.TabIndex = 38;
@@ -66,7 +70,7 @@
             this.Location_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Location_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Location_box.ForeColor = System.Drawing.Color.White;
-            this.Location_box.Location = new System.Drawing.Point(87, 550);
+            this.Location_box.Location = new System.Drawing.Point(18, 549);
             this.Location_box.Name = "Location_box";
             this.Location_box.Size = new System.Drawing.Size(211, 25);
             this.Location_box.TabIndex = 37;
@@ -78,7 +82,7 @@
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label3.Location = new System.Drawing.Point(328, 414);
+            this.label3.Location = new System.Drawing.Point(259, 413);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 36);
             this.label3.TabIndex = 36;
@@ -90,7 +94,7 @@
             this.Name_Branch_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Name_Branch_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Name_Branch_box.ForeColor = System.Drawing.Color.White;
-            this.Name_Branch_box.Location = new System.Drawing.Point(335, 453);
+            this.Name_Branch_box.Location = new System.Drawing.Point(266, 452);
             this.Name_Branch_box.Name = "Name_Branch_box";
             this.Name_Branch_box.Size = new System.Drawing.Size(211, 25);
             this.Name_Branch_box.TabIndex = 35;
@@ -100,7 +104,7 @@
             this.Add_btn.BackColor = System.Drawing.Color.Black;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.Add_btn.Location = new System.Drawing.Point(612, 473);
+            this.Add_btn.Location = new System.Drawing.Point(689, 411);
             this.Add_btn.Name = "Add_btn";
             this.Add_btn.Size = new System.Drawing.Size(202, 45);
             this.Add_btn.TabIndex = 34;
@@ -115,7 +119,7 @@
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(328, 507);
+            this.label5.Location = new System.Drawing.Point(259, 506);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(173, 40);
             this.label5.TabIndex = 33;
@@ -128,7 +132,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label2.Location = new System.Drawing.Point(80, 414);
+            this.label2.Location = new System.Drawing.Point(11, 413);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 36);
             this.label2.TabIndex = 32;
@@ -140,7 +144,7 @@
             this.Customer_ID_Box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Customer_ID_Box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.Customer_ID_Box.ForeColor = System.Drawing.Color.White;
-            this.Customer_ID_Box.Location = new System.Drawing.Point(326, 550);
+            this.Customer_ID_Box.Location = new System.Drawing.Point(257, 549);
             this.Customer_ID_Box.Name = "Customer_ID_Box";
             this.Customer_ID_Box.Size = new System.Drawing.Size(225, 25);
             this.Customer_ID_Box.TabIndex = 31;
@@ -151,7 +155,7 @@
             this.Branch_Id_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Branch_Id_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Italic);
             this.Branch_Id_box.ForeColor = System.Drawing.Color.White;
-            this.Branch_Id_box.Location = new System.Drawing.Point(87, 453);
+            this.Branch_Id_box.Location = new System.Drawing.Point(18, 452);
             this.Branch_Id_box.Name = "Branch_Id_box";
             this.Branch_Id_box.Size = new System.Drawing.Size(211, 25);
             this.Branch_Id_box.TabIndex = 30;
@@ -226,12 +230,68 @@
             this.Exit_btn.UseVisualStyleBackColor = false;
             this.Exit_btn.Click += new System.EventHandler(this.Exit_btn_Click);
             // 
+            // Time_Execute_box
+            // 
+            this.Time_Execute_box.BackColor = System.Drawing.Color.Black;
+            this.Time_Execute_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Time_Execute_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Time_Execute_box.ForeColor = System.Drawing.Color.White;
+            this.Time_Execute_box.Location = new System.Drawing.Point(506, 552);
+            this.Time_Execute_box.Name = "Time_Execute_box";
+            this.Time_Execute_box.ReadOnly = true;
+            this.Time_Execute_box.Size = new System.Drawing.Size(179, 25);
+            this.Time_Execute_box.TabIndex = 43;
+            this.Time_Execute_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.Black;
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Location = new System.Drawing.Point(506, 509);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(179, 40);
+            this.label6.TabIndex = 42;
+            this.label6.Text = "Time Execute";
+            // 
+            // Count_Item_box
+            // 
+            this.Count_Item_box.BackColor = System.Drawing.Color.Black;
+            this.Count_Item_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Count_Item_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Count_Item_box.ForeColor = System.Drawing.Color.White;
+            this.Count_Item_box.Location = new System.Drawing.Point(506, 459);
+            this.Count_Item_box.Name = "Count_Item_box";
+            this.Count_Item_box.ReadOnly = true;
+            this.Count_Item_box.Size = new System.Drawing.Size(152, 25);
+            this.Count_Item_box.TabIndex = 41;
+            this.Count_Item_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label7.Location = new System.Drawing.Point(506, 416);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 40);
+            this.label7.TabIndex = 40;
+            this.label7.Text = "Count Item";
+            // 
             // Add_Branches_Items_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Time_Execute_box);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.Count_Item_box);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.Exit_btn);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Location_box);
@@ -270,5 +330,9 @@
         private System.Windows.Forms.ColumnHeader Location;
         private System.Windows.Forms.ColumnHeader Supply_ID;
         private System.Windows.Forms.Button Exit_btn;
+        private System.Windows.Forms.TextBox Time_Execute_box;
+        public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox Count_Item_box;
+        public System.Windows.Forms.Label label7;
     }
 }
