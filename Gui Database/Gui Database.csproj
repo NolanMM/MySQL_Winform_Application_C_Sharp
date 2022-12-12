@@ -108,6 +108,12 @@
     <Compile Include="Add_Customer_Items_UC.Designer.cs">
       <DependentUpon>Add_Customer_Items_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_DependentUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_DependentUC.Designer.cs">
+      <DependentUpon>Add_DependentUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Employee_Item_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,6 +150,12 @@
     <Compile Include="Add_Parts_Item_UC.Designer.cs">
       <DependentUpon>Add_Parts_Item_UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Skills_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Add_Skills_UC.Designer.cs">
+      <DependentUpon>Add_Skills_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add_Supply_Item_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +173,12 @@
     </Compile>
     <Compile Include="Customer_UC.Designer.cs">
       <DependentUpon>Customer_UC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dependent_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dependent_UC.Designer.cs">
+      <DependentUpon>Dependent_UC.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee_UC.cs">
       <SubType>UserControl</SubType>
@@ -230,6 +248,12 @@
     <Compile Include="Report_3UC.Designer.cs">
       <DependentUpon>Report_3UC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Skills_List_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Skills_List_UC.Designer.cs">
+      <DependentUpon>Skills_List_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Supply_Uc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +271,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Customer_Items_UC.resx">
       <DependentUpon>Add_Customer_Items_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_DependentUC.resx">
+      <DependentUpon>Add_DependentUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_Employee_Item_UC.resx">
       <DependentUpon>Add_Employee_Item_UC.cs</DependentUpon>
@@ -266,6 +293,9 @@
     <EmbeddedResource Include="Add_Parts_Item_UC.resx">
       <DependentUpon>Add_Parts_Item_UC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Skills_UC.resx">
+      <DependentUpon>Add_Skills_UC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add_Supply_Item_UC.resx">
       <DependentUpon>Add_Supply_Item_UC.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_UC.resx">
       <DependentUpon>Customer_UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dependent_UC.resx">
+      <DependentUpon>Dependent_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee_UC.resx">
       <DependentUpon>Employee_UC.cs</DependentUpon>
@@ -317,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report_3UC.resx">
       <DependentUpon>Report_3UC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Skills_List_UC.resx">
+      <DependentUpon>Skills_List_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Supply_Uc.resx">
       <DependentUpon>Supply_Uc.cs</DependentUpon>

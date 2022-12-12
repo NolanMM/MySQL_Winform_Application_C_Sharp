@@ -54,10 +54,6 @@ namespace Gui_Database
         {
             showSubMenu(SideMenuPanel);
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            showSubMenu(SidePanel_Reports_panel);
-        }
         private void movesidepanel_Show(Button btn)
         {
             sidepanel_Show.Top = btn.Top;
@@ -240,13 +236,6 @@ namespace Gui_Database
             moveSidepanel_report(Report_1_btn);
         }
 
-        private void Report_2_btn_Click(object sender, EventArgs e)
-        {
-            Report_2UC Report2 = new Report_2UC();
-            addUC(Report2);
-            moveSidepanel_report(Report_2_btn);
-        }
-
         private void Report3_btn_Click(object sender, EventArgs e)
         {
             Report_3UC Report3 = new Report_3UC();
@@ -258,6 +247,46 @@ namespace Gui_Database
         {
             System.Environment.Exit(0);
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            showSubMenu(SidePanel_Reports_panel);
+        }
+
+        private void Report_2_btn_Click(object sender, EventArgs e)
+        {
+            Report_2UC Report2 = new Report_2UC();
+            addUC(Report2);
+            moveSidepanel_report(Report_2_btn);
+        }
+
+        private void Dependent_table_Click(object sender, EventArgs e)
+        {
+            Dependent_UC Dependent = new Dependent_UC();
+            addUC(Dependent);
+            movesidepanel_Show(Dependent_table);
+        }
+
+        private void Skills_Table_Click(object sender, EventArgs e)
+        {
+            Skills_List_UC Skills = new Skills_List_UC();
+            addUC(Skills);
+            movesidepanel_Show(Skills_Table);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Add_DependentUC Add_Dependent = new Add_DependentUC();
+            addUC(Add_Dependent);
+            moveSidepanel_input(button3);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Add_Skills_UC Report2 = new Add_Skills_UC();
+            addUC(Report2);
+            moveSidepanel_input(button4);
         }
     }
 }
