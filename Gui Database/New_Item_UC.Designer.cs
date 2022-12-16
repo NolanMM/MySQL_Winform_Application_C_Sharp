@@ -51,6 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Count_Item_box = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.PriceCol = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label3
@@ -171,6 +172,7 @@
             this.Items_listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Item_ID,
             this.Description,
+            this.PriceCol,
             this.Colour,
             this.Size_,
             this.Type,
@@ -197,7 +199,7 @@
             // 
             this.Description.Text = "Description";
             this.Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Description.Width = 192;
+            this.Description.Width = 135;
             // 
             // Colour
             // 
@@ -291,6 +293,10 @@
             this.label6.TabIndex = 50;
             this.label6.Text = "Count Item";
             // 
+            // PriceCol
+            // 
+            this.PriceCol.Text = "Price";
+            // 
             // New_Item_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,5 +349,6 @@
         public System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Count_Item_box;
         public System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ColumnHeader PriceCol;
     }
 }

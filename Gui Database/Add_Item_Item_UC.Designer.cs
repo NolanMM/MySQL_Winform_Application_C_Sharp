@@ -57,6 +57,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.Count_Item_box = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
+            this.Price_box = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.PriceCol = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label3
@@ -151,6 +154,7 @@
             this.Items_listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Item_ID,
             this.Description,
+            this.PriceCol,
             this.Colour,
             this.Size_,
             this.Type,
@@ -177,7 +181,7 @@
             // 
             this.Description.Text = "Description";
             this.Description.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Description.Width = 192;
+            this.Description.Width = 140;
             // 
             // Colour
             // 
@@ -308,9 +312,9 @@
             this.Add_btn.BackColor = System.Drawing.Color.Black;
             this.Add_btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_btn.ForeColor = System.Drawing.Color.Maroon;
-            this.Add_btn.Location = new System.Drawing.Point(559, 546);
+            this.Add_btn.Location = new System.Drawing.Point(738, 447);
             this.Add_btn.Name = "Add_btn";
-            this.Add_btn.Size = new System.Drawing.Size(202, 45);
+            this.Add_btn.Size = new System.Drawing.Size(105, 144);
             this.Add_btn.TabIndex = 71;
             this.Add_btn.Text = "Add To Table";
             this.Add_btn.UseVisualStyleBackColor = false;
@@ -381,12 +385,43 @@
             this.label10.TabIndex = 73;
             this.label10.Text = "Count Item";
             // 
+            // Price_box
+            // 
+            this.Price_box.BackColor = System.Drawing.Color.Black;
+            this.Price_box.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Price_box.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.Price_box.ForeColor = System.Drawing.Color.White;
+            this.Price_box.Location = new System.Drawing.Point(552, 566);
+            this.Price_box.Name = "Price_box";
+            this.Price_box.Size = new System.Drawing.Size(152, 25);
+            this.Price_box.TabIndex = 78;
+            this.Price_box.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.Black;
+            this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.label11.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label11.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.Location = new System.Drawing.Point(552, 523);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 40);
+            this.label11.TabIndex = 77;
+            this.label11.Text = "Price";
+            // 
+            // PriceCol
+            // 
+            this.PriceCol.Text = "Price";
+            // 
             // Add_Item_Item_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.Price_box);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.Time_Execute_box);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Count_Item_box);
@@ -448,5 +483,8 @@
         public System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Count_Item_box;
         public System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox Price_box;
+        public System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ColumnHeader PriceCol;
     }
 }

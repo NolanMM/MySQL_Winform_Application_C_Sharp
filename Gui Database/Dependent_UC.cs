@@ -95,7 +95,7 @@ namespace Gui_Database
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = connstring;
                 con.Open();
-                string sql = "select * from accounts";
+                string sql = "select * from dependent";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 // Check if each text box be null so just search for the text box not null

@@ -55,14 +55,15 @@ namespace Gui_Database
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    string[] _Item = new string[7];
+                    string[] _Item = new string[8];
                     _Item[0] = (string)reader["Item_ID"].ToString();
                     _Item[1] = (string)reader["Description"].ToString();
-                    _Item[2] = (string)reader["Colour"].ToString();
-                    _Item[3] = (string)reader["Size"].ToString();
-                    _Item[4] = (string)reader["Type"].ToString();
-                    _Item[5] = (string)reader["Order_Item_ID"].ToString();
-                    _Item[6] = (string)reader["Supply_ID"].ToString();
+                    _Item[2] = (string)reader["Price"].ToString();
+                    _Item[3] = (string)reader["Colour"].ToString();
+                    _Item[4] = (string)reader["Size"].ToString();
+                    _Item[5] = (string)reader["Type"].ToString();
+                    _Item[6] = (string)reader["Order_Item_ID"].ToString();
+                    _Item[7] = (string)reader["Supply_ID"].ToString();
 
                     //MessageBox.Show("Account Number: " + reader["AccountNumber"] + " Payment Date " + reader["PaymentDate"]);
                     ListViewItem items = new ListViewItem(_Item);
@@ -108,14 +109,15 @@ namespace Gui_Database
                     {
                         if (Item_ID_box.Text.Equals(reader["Item_ID"]))
                         {
-                            string[] _Item = new string[7];
+                            string[] _Item = new string[8];
                             _Item[0] = (string)reader["Item_ID"].ToString();
                             _Item[1] = (string)reader["Description"].ToString();
-                            _Item[2] = (string)reader["Colour"].ToString();
-                            _Item[3] = (string)reader["Size"].ToString();
-                            _Item[4] = (string)reader["Type"].ToString();
-                            _Item[5] = (string)reader["Order_Item_ID"].ToString();
-                            _Item[6] = (string)reader["Supply_ID"].ToString();
+                            _Item[2] = (string)reader["Price"].ToString();
+                            _Item[3] = (string)reader["Colour"].ToString();
+                            _Item[4] = (string)reader["Size"].ToString();
+                            _Item[5] = (string)reader["Type"].ToString();
+                            _Item[6] = (string)reader["Order_Item_ID"].ToString();
+                            _Item[7] = (string)reader["Supply_ID"].ToString();
                             ListViewItem items = new ListViewItem(_Item);
                             Items_listview.Items.Add(items);
                             found = true;

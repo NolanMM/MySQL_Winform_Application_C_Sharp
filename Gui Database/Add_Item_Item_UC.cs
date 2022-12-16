@@ -55,14 +55,15 @@ namespace Gui_Database
                 MySqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    string[] _Item = new string[7];
+                    string[] _Item = new string[8];
                     _Item[0] = (string)reader["Item_ID"].ToString();
                     _Item[1] = (string)reader["Description"].ToString();
-                    _Item[2] = (string)reader["Colour"].ToString();
-                    _Item[3] = (string)reader["Size"].ToString();
-                    _Item[4] = (string)reader["Type"].ToString();
-                    _Item[5] = (string)reader["Order_Item_ID"].ToString();
-                    _Item[6] = (string)reader["Supply_ID"].ToString();
+                    _Item[2] = (string)reader["Price"].ToString();
+                    _Item[3] = (string)reader["Colour"].ToString();
+                    _Item[4] = (string)reader["Size"].ToString();
+                    _Item[5] = (string)reader["Type"].ToString();
+                    _Item[6] = (string)reader["Order_Item_ID"].ToString();
+                    _Item[7] = (string)reader["Supply_ID"].ToString();
 
                     //MessageBox.Show("Account Number: " + reader["AccountNumber"] + " Payment Date " + reader["PaymentDate"]);
                     ListViewItem items = new ListViewItem(_Item);
@@ -93,11 +94,22 @@ namespace Gui_Database
                 string Type = Type_Box.Text.ToString();
                 string Order_Item = Order_Item_Box.Text.ToString();
                 string Supply_ID = Supply_ID_Box.Text.ToString();
-
+                string price = Price_box.Text.ToString();
 
                 if (Item_ID_box.Text.Length == 0)
                 {
-                    MessageBox.Show("Error, Primary Key cannot be null", "Warning");
+                    MessageBox.Show("Error, Item_ID cannot be null", "Warning");
+                    return;
+                }
+                if (Price_box.Text.Length == 0)
+                {
+                    MessageBox.Show("Error, Price cannot be null", "Warning");
+                    return;
+                }
+                bool isParsable = Int32.TryParse(price, out int price_number);
+                if(isParsable == false)
+                {
+                    MessageBox.Show("Error, Price must be integer", "Warning");
                     return;
                 }
                 if (Description_box.Text.Length == 0)
@@ -127,8 +139,8 @@ namespace Gui_Database
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = connstring;
                 con.Open();
-
-                string sql = @"INSERT INTO `arnolda_8723388`.`item` (`Item_ID`, `Description`, `Colour`, `Size`, `Type`, `Order_Item_ID`, `Supply_ID`) VALUES('" + Item_Id + "', '" + Description + "', '" + Colour + "', '" + Size + "', '" + Type + "', '" + Order_Item + "', '" + Supply_ID + "');";
+                // price_number;
+                string sql = @"INSERT INTO `arnolda_8723388`.`item` (`Item_ID`, `Description`,`Price`, `Colour`, `Size`, `Type`, `Order_Item_ID`, `Supply_ID`) VALUES('" + Item_Id + "', '" + Description + "', '" + price_number + "', '" + Colour + "', '" + Size + "', '" + Type + "', '" + Order_Item + "', '" + Supply_ID + "');";
                 MySqlCommand cmd = new MySqlCommand(sql, con);
                 cmd.ExecuteNonQuery();
                 sql = "select * from item";
@@ -136,14 +148,15 @@ namespace Gui_Database
                 MySqlDataReader reader = cmd_2.ExecuteReader();
                 while (reader.Read())
                 {
-                    string[] _Item = new string[7];
+                    string[] _Item = new string[8];
                     _Item[0] = (string)reader["Item_ID"].ToString();
                     _Item[1] = (string)reader["Description"].ToString();
-                    _Item[2] = (string)reader["Colour"].ToString();
-                    _Item[3] = (string)reader["Size"].ToString();
-                    _Item[4] = (string)reader["Type"].ToString();
-                    _Item[5] = (string)reader["Order_Item_ID"].ToString();
-                    _Item[6] = (string)reader["Supply_ID"].ToString();
+                    _Item[2] = (string)reader["Price"].ToString();
+                    _Item[3] = (string)reader["Colour"].ToString();
+                    _Item[4] = (string)reader["Size"].ToString();
+                    _Item[5] = (string)reader["Type"].ToString();
+                    _Item[6] = (string)reader["Order_Item_ID"].ToString();
+                    _Item[7] = (string)reader["Supply_ID"].ToString();
                     //MessageBox.Show("Account Number: " + reader["AccountNumber"] + " Payment Date " + reader["PaymentDate"]);
                     ListViewItem items = new ListViewItem(_Item);
                     Items_listview.Items.Add(items);
@@ -156,6 +169,7 @@ namespace Gui_Database
                 Type_Box.Clear();
                 Order_Item_Box.Clear();
                 Supply_ID_Box.Clear();
+                Price_box.Clear();
                 con.Close();
 
                 Count_Item_Function("item");

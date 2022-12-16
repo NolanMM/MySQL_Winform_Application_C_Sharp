@@ -229,20 +229,6 @@ namespace Gui_Database
             addUC(Home);
         }
 
-        private void Report_1_btn_Click(object sender, EventArgs e)
-        {
-            Report_1UC Report1 = new Report_1UC();
-            addUC(Report1);
-            moveSidepanel_report(Report_1_btn);
-        }
-
-        private void Report3_btn_Click(object sender, EventArgs e)
-        {
-            Report_3UC Report3 = new Report_3UC();
-            addUC(Report3);
-            moveSidepanel_report(Report3_btn);
-        }
-
         private void Exit_btn_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
@@ -287,6 +273,32 @@ namespace Gui_Database
             Add_Skills_UC Report2 = new Add_Skills_UC();
             addUC(Report2);
             moveSidepanel_input(button4);
+        }
+
+        private void Report_1_btn_Click_1(object sender, EventArgs e)
+        {
+            Report_1UC Report1 = new Report_1UC();
+            addUC(Report1);
+            moveSidepanel_report(Report_1_btn);
+        }
+
+        private void Report3_btn_Click_1(object sender, EventArgs e)
+        {
+            Report_3UC Report3 = new Report_3UC();
+            addUC(Report3);
+            moveSidepanel_report(Report3_btn);
+        }
+
+        private void REQ_3_Final_btn_Click(object sender, EventArgs e)
+        {
+            Report_REQ_3_FinalUC Report3_Final = new Report_REQ_3_FinalUC();
+            addUC(Report3_Final);
+        }
+
+        private void REQ_4_Final_btn_Click(object sender, EventArgs e)
+        {
+            Report_REQ_4_FinalUC Report4_Final = new Report_REQ_4_FinalUC();
+            addUC(Report4_Final);
         }
     }
 }
