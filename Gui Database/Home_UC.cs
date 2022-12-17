@@ -40,5 +40,11 @@ namespace Gui_Database
             Report_REQ_4_FinalUC Report4_Final = new Report_REQ_4_FinalUC();
             addUC(Report4_Final);
         }
+
+        private void REQ_1_Final_btn_Click(object sender, EventArgs e)
+        {
+            REQ_1_Final_UC Report1_Final = new REQ_1_Final_UC();
+            addUC(Report1_Final);
+        }
     }
 }

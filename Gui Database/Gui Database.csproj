@@ -260,6 +260,12 @@
     <Compile Include="Report_REQ_4_FinalUC.Designer.cs">
       <DependentUpon>Report_REQ_4_FinalUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="REQ_1_Final_UC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="REQ_1_Final_UC.Designer.cs">
+      <DependentUpon>REQ_1_Final_UC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Skills_List_UC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -368,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report_REQ_4_FinalUC.resx">
       <DependentUpon>Report_REQ_4_FinalUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REQ_1_Final_UC.resx">
+      <DependentUpon>REQ_1_Final_UC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Skills_List_UC.resx">
       <DependentUpon>Skills_List_UC.cs</DependentUpon>

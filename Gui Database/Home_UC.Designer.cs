@@ -34,12 +34,14 @@
             this.Exit_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.REQ_1_Final_btn = new System.Windows.Forms.Button();
             this.panelcenter.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelcenter
             // 
             this.panelcenter.BackColor = System.Drawing.Color.Transparent;
+            this.panelcenter.Controls.Add(this.REQ_1_Final_btn);
             this.panelcenter.Controls.Add(this.REQ_4_Final_btn);
             this.panelcenter.Controls.Add(this.REQ_3_Final_btn);
             this.panelcenter.Controls.Add(this.Exit_btn);
@@ -53,11 +55,11 @@
             // 
             // REQ_4_Final_btn
             // 
-            this.REQ_4_Final_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.REQ_4_Final_btn.BackColor = System.Drawing.Color.Black;
             this.REQ_4_Final_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.REQ_4_Final_btn.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.REQ_4_Final_btn.ForeColor = System.Drawing.Color.White;
-            this.REQ_4_Final_btn.Location = new System.Drawing.Point(611, 554);
+            this.REQ_4_Final_btn.Location = new System.Drawing.Point(636, 545);
             this.REQ_4_Final_btn.Name = "REQ_4_Final_btn";
             this.REQ_4_Final_btn.Size = new System.Drawing.Size(204, 40);
             this.REQ_4_Final_btn.TabIndex = 28;
@@ -67,11 +69,11 @@
             // 
             // REQ_3_Final_btn
             // 
-            this.REQ_3_Final_btn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.REQ_3_Final_btn.BackColor = System.Drawing.Color.Black;
             this.REQ_3_Final_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.REQ_3_Final_btn.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.REQ_3_Final_btn.ForeColor = System.Drawing.Color.White;
-            this.REQ_3_Final_btn.Location = new System.Drawing.Point(26, 558);
+            this.REQ_3_Final_btn.Location = new System.Drawing.Point(353, 545);
             this.REQ_3_Final_btn.Name = "REQ_3_Final_btn";
             this.REQ_3_Final_btn.Size = new System.Drawing.Size(204, 40);
             this.REQ_3_Final_btn.TabIndex = 27;
@@ -118,6 +120,20 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Welcome To Database ";
             // 
+            // REQ_1_Final_btn
+            // 
+            this.REQ_1_Final_btn.BackColor = System.Drawing.Color.Black;
+            this.REQ_1_Final_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.REQ_1_Final_btn.Font = new System.Drawing.Font("Segoe UI", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.REQ_1_Final_btn.ForeColor = System.Drawing.Color.White;
+            this.REQ_1_Final_btn.Location = new System.Drawing.Point(60, 545);
+            this.REQ_1_Final_btn.Name = "REQ_1_Final_btn";
+            this.REQ_1_Final_btn.Size = new System.Drawing.Size(204, 40);
+            this.REQ_1_Final_btn.TabIndex = 29;
+            this.REQ_1_Final_btn.Text = "REQ-1 Final";
+            this.REQ_1_Final_btn.UseVisualStyleBackColor = false;
+            this.REQ_1_Final_btn.Click += new System.EventHandler(this.REQ_1_Final_btn_Click);
+            // 
             // Home_UC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,5 +156,6 @@
         private System.Windows.Forms.Button Exit_btn;
         public System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button REQ_1_Final_btn;
     }
 }

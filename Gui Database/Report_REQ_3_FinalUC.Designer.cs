@@ -41,6 +41,7 @@
             this.Show_Account_table_list = new System.Windows.Forms.Button();
             this.Total_Sale_Order_box = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // REQ3_listview
@@ -190,12 +191,25 @@
             this.label2.TabIndex = 57;
             this.label2.Text = "Total Sale All Order";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Maroon;
+            this.button1.Location = new System.Drawing.Point(565, 512);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(202, 45);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "CLear the List";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // Report_REQ_3_FinalUC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Gui_Database.Properties.Resources.nasa_53884_unsplash;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Total_Sale_Order_box);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.Time_Execute_box);
@@ -227,5 +241,6 @@
         public System.Windows.Forms.Button Show_Account_table_list;
         private System.Windows.Forms.TextBox Total_Sale_Order_box;
         public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button button1;
     }
 }
